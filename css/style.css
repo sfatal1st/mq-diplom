@@ -29,7 +29,7 @@
         padding: 28px 15px 125px;
     }
 }
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+@media (min-width: 641px) and (max-width: 1199px) {
     .header {
         padding: 28px 35px 125px;
     }
@@ -138,7 +138,7 @@ a {
     flex-wrap: nowrap;
     margin-right: auto;
     margin-left: auto;
-    width: 690px;
+    max-width: 690px;
     text-align: center;
     font-family: opensans-bold;
     color: #ffffff;
@@ -183,7 +183,7 @@ a {
     z-index: 0;
     margin-top: 5px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 641px) {
     .trend {
         width: 24.75%;
     }
