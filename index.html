@@ -12,6 +12,11 @@
 <header class="header">
     <div class="container-logo-menu">
         <a class="link-logo" href="#0"><img class="header-logo" src="svg/noemi-logo.svg" alt="Логотип"></a>
+        <div class="main-menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav class="main-menu">
             <ul class="menu-list">
                 <li class="menu-list-item">
@@ -94,9 +99,7 @@
 <div class="main-page">
     <main class="main">
         <article class="post">
-            <div class="post-preview">
-                <img src="images/last-post1.jpg" alt="Картинка к посту">
-            </div>
+            <img class="post-preview" src="images/last-post1.jpg" alt="Картинка к посту">
             <div class="post-info">
                 <div class="post-header">
                     <ul class="category">
@@ -119,9 +122,7 @@
             </div>
         </article>
         <article class="post">
-            <div class="post-preview">
-                <img src="images/last-post2.jpg" alt="Картинка к посту">
-            </div>
+            <img class="post-preview" src="images/last-post2.jpg" alt="Картинка к посту">
             <div class="post-info">
                 <div class="post-header">
                     <ul class="category">
@@ -144,9 +145,7 @@
             </div>
         </article>
         <article class="post">
-            <div class="post-preview">
-                <img src="images/last-post3.jpg" alt="Картинка к посту">
-            </div>
+            <img class="post-preview" src="images/last-post3.jpg" alt="Картинка к посту">
             <div class="post-info">
                 <div class="post-header">
                     <ul class="category">
@@ -167,9 +166,7 @@
             </div>
         </article>
         <article class="post">
-            <div class="post-preview">
-                <img src="images/last-post4.jpg" alt="Картинка к посту">
-            </div>
+            <img class="post-preview" src="images/last-post4.jpg" alt="Картинка к посту">
             <div class="post-info">
                 <div class="post-header">
                     <ul class="category">
@@ -192,9 +189,7 @@
             </div>
         </article>
         <article class="post">
-            <div class="post-preview">
-                <img src="images/last-post5.jpg" alt="Картинка к посту">
-            </div>
+            <img class="post-preview" src="images/last-post5.jpg" alt="Картинка к посту">
             <div class="post-info">
                 <div class="post-header">
                     <ul class="category">
@@ -356,11 +351,17 @@
         </section>
     </aside>
 </div>
-<div class="shop">
+<section class="shop">
    <h2 class="title-products">Наши изделия</h2>
    <div class="products">
        <article class="product">
-           <img class="product-preview" src="images/shop-item-desk1.jpg" alt="Картинка изделия">
+           <img srcset="images/shop-item-mobile1.jpg 285w,
+                        images/shop-item-tablet1.jpg1.jpg 292w,
+                        images/shop-item-desk1.jpg 300w"
+                sizes="(max-width: 640px) 285px,
+                       (min-width: 641px) and (max-width: 1199px) 292px,
+                                          300px"
+                src="images/shop-item-desk1.jpg" alt="Картинка изделия">
            <div class="product-body">
                <div class="product-title">
                    <span>Подушки на диван</span>
@@ -388,7 +389,13 @@
            </div>
        </article>
        <article class="product">
-           <img class="product-preview" src="images/shop-item-desk2.jpg" alt="Картинка изделия">
+           <img srcset="images/shop-item-mobile2.jpg 285w,
+                        images/shop-item-tablet2.jpg1.jpg 292w,
+                        images/shop-item-desk2.jpg 300w"
+                sizes="(max-width: 640px) 285px,
+                       (min-width: 641px) and (max-width: 1199px) 292px,
+                                          300px"
+                src="images/shop-item-desk2.jpg" alt="Картинка изделия">
            <div class="product-body">
                <div class="product-title">
                    <span>Кукла «Зайчик»</span>
@@ -416,7 +423,13 @@
            </div>
        </article>
        <article class="product">
-           <img class="product-preview" src="images/shop-item-desk3.jpg" alt="Картинка изделия">
+           <img srcset="images/shop-item-mobile3.jpg 285w,
+                        images/shop-item-tablet3.jpg1.jpg 292w,
+                        images/shop-item-desk3.jpg 300w"
+                sizes="(max-width: 640px) 285px,
+                       (min-width: 641px) and (max-width: 1199px) 292px,
+                                          300px"
+                src="images/shop-item-desk3.jpg" alt="Картинка изделия">
            <div class="product-body">
                <div class="product-title">
                    <span>Шестиугольная рамка</span>
@@ -444,7 +457,7 @@
            </div>
        </article>
    </div>
-</div>
+</section>
    <footer class="footer">
        <section class="socials">
            <ul class="socials-list">
