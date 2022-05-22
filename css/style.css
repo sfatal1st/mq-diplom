@@ -308,7 +308,6 @@ a {
 .trend-fourth {
     background-image: url("../images/trend4.jpg");
 }
-
 .trend-content {
     display: flex;
     flex-direction: column;
@@ -316,9 +315,24 @@ a {
     flex-grow: 1;
     border: 3px solid #b59f5b;
     margin: 135px 15px 20px;
-    padding: 40px 35px 30px;
+}
+@media (max-width: 640px) {
+    .trend-content {
+        padding: 30px 20px;
+    }
 }
 
+@media (min-width: 641px) and (max-width: 1199px) {
+    .trend-content {
+        padding: 35px 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .trend-content {
+        padding: 35px;
+    }
+}
 .trend-category {
     margin-bottom: 15px;
 }
@@ -853,6 +867,8 @@ a.categories-link:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 640px) {
@@ -863,7 +879,7 @@ a.categories-link:hover {
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .products {
-        max-width: 700px;
+        max-width: 650px;
     }
 
     .product {
