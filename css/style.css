@@ -371,12 +371,23 @@ a {
     }
 }
 
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+    .trend-title {
+        font-size: 14px;
+    }
+    .trend-category-link {
+        font-size: 12px;
+    }
+    .trend-content {
+        padding: 35px 15px;
+    }
+}
+
 @media (min-width: 1200px) {
     .trend-title {
         font-size: 20px;
     }
 }
-
 .trend-title:hover {
     color: #b59f5b;
 }
