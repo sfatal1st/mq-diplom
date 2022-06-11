@@ -219,8 +219,7 @@ a {
 }
 
 .title-trends {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: opensans-bold;
     color: #0f0d0e;
     text-transform: uppercase;
@@ -232,7 +231,10 @@ a {
 
 .title-trends::after {
     content: "";
-    position: absolute;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
     background: #b59f5b;
     bottom: -10px;
     width: 65px;
@@ -415,8 +417,11 @@ a {
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .main-page {
-        max-width: 770px;
+        width: calc(100% - 420px);
         padding: 0 35px;
+    }
+    .main {
+        margin-right: 15px;
     }
 }
 
@@ -425,12 +430,8 @@ a {
         max-width: 1200px;
         padding: 0 15px;
     }
-}
-
-@media (min-width: 641px) {
     .main {
-        max-width: 65%;
-        margin-right: 15px;
+        margin-right: 150px;
     }
 }
 
@@ -450,7 +451,7 @@ a {
 @media (min-width: 641px) and (max-width: 1199px) {
     .post {
         flex-wrap: wrap;
-        max-width: 390px;
+        max-width: 100%;
     }
 }
 
@@ -467,7 +468,6 @@ a {
 
 .post-preview {
     display: flex;
-    max-width: 100%;
     position: relative;
     margin-right: auto;
     margin-left: auto;
@@ -496,6 +496,9 @@ a {
         max-width: 100%;
         border-bottom: 3px solid #eeeeee;
     }
+    .post-preview {
+        width: 100%;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -504,11 +507,17 @@ a {
         max-width: 100%;
         border-bottom: 3px solid #eeeeee;
     }
+    .post-preview {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
     .post-info {
         margin-left: 30px;
+    }
+    .post-preview {
+        max-width: 100%;
     }
 }
 
@@ -617,8 +626,7 @@ a {
 }
 
 .latest-posts-title {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: opensans-bold;
     color: #0f0d0e;
     text-transform: uppercase;
@@ -628,10 +636,12 @@ a {
 
 .latest-posts-title::after {
     content: "";
-    position: absolute;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
     background: #b59f5b;
     left: 37.5%;
-    bottom: -10px;
     width: 25%;
     height: 3px;
 }
@@ -856,8 +866,7 @@ a.categories-link:hover {
 }
 
 .title-products {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: opensans-bold;
     color: #0f0d0e;
     text-transform: uppercase;
@@ -867,9 +876,11 @@ a.categories-link:hover {
 
 .title-products::after {
     content: "";
-    position: absolute;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
     background: #b59f5b;
-    bottom: -10px;
     width: 65px;
     height: 3px;
 }
@@ -890,11 +901,11 @@ a.categories-link:hover {
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .products {
-        max-width: 650px;
+        width: 650px;
     }
 
     .product {
-        width: 41.4%;
+        width: 45%;
     }
 
     .product:nth-child(n + 3) {
@@ -931,7 +942,7 @@ a.categories-link:hover {
 
 .product-preview::after {
     content: "";
-    position: absolute;
+    display: block;
     top: 0;
     left: 0;
     right: 0;
@@ -947,7 +958,7 @@ a.categories-link:hover {
     outline-offset: 20px;
     top: -10px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .product-title {
@@ -1018,7 +1029,7 @@ a.categories-link:hover {
 }
 
 .button-submit-shop {
-    padding: 0 25px;
+    padding: 15px 25px;
 }
 
 .footer {
@@ -1113,18 +1124,14 @@ a.social-icon-tumblr {
     bottom: 0;
     background-color: #000000;
     opacity: 0.6;
-    z-index: 2;
+    z-index: 3;
 }
 
 .popup-container {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
     background-color: #ffffff;
     opacity: 1;
-    z-index: 3;
+    z-index: 4;
     padding: 50px 30px;
 }
 
@@ -1141,8 +1148,7 @@ a.social-icon-tumblr {
 }
 
 .title-feedback {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: opensans-bold;
     color: #0f0d0e;
     text-transform: uppercase;
@@ -1170,10 +1176,12 @@ a.social-icon-tumblr {
 
 .title-feedback::after {
     content: "";
-    position: absolute;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
     background: #b59f5b;
     opacity: 0.4;
-    bottom: -10px;
     width: 65px;
     height: 3px;
 }
@@ -1293,6 +1301,7 @@ a.social-icon-tumblr {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 18px 18px;
+    border: none;
 }
 
 
