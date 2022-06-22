@@ -592,6 +592,10 @@ a {
     color: #0f0d0e;
 }
 
+.aside {
+    flex: none;
+}
+
 @media (max-width: 640px) {
     .post-description {
         font-size: 14px;
@@ -606,10 +610,6 @@ a {
     .latest-posts-title {
         font-size: 16px;
     }
-}
-
-.aside {
-    flex: none;
 }
 
 @media (min-width: 641px) {
