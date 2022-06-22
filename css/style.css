@@ -406,7 +406,6 @@ a {
 @media (max-width: 640px) {
     .main-page {
         flex-wrap: wrap;
-        max-width: 360px;
         padding: 0 15px;
     }
 
@@ -417,7 +416,6 @@ a {
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .main-page {
-        width: calc(100% - 420px);
         padding: 0 35px;
     }
     .main {
@@ -493,7 +491,7 @@ a {
 @media (max-width: 640px) {
     .post-info {
         margin-top: 15px;
-        max-width: 100%;
+        width: 100%;
         border-bottom: 3px solid #eeeeee;
     }
     .post-preview {
@@ -504,7 +502,7 @@ a {
 @media (min-width: 641px) and (max-width: 1199px) {
     .post-info {
         margin-top: 15px;
-        max-width: 100%;
+        width: 100%;
         border-bottom: 3px solid #eeeeee;
     }
     .post-preview {
@@ -608,6 +606,10 @@ a {
     .latest-posts-title {
         font-size: 16px;
     }
+}
+
+.aside {
+    flex: none;
 }
 
 @media (min-width: 641px) {
